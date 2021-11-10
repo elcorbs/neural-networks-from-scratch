@@ -1,7 +1,8 @@
 #! python3
+import numpy as np
 
 def calculate_single_neuron_in_layer(inputs, weights, bias):
-    return sum([i * w for i,w in zip(inputs, weights)]) + bias
+    return np.dot(inputs, weights) + bias
 
 
 if __name__ == '__main__':
