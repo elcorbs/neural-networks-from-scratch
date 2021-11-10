@@ -6,7 +6,7 @@ def calculate_layer(inputs, weights, biases):
     inputs = array(inputs)
     weights = array(weights)
     biases = array(biases)
-    return array(np.matmul(inputs, weights.T)).T + biases
+    return np.matmul(inputs, weights.T) + biases
 
 
     
